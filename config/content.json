@@ -87,8 +87,8 @@
         "title": "Test Project 1",
         "description": "This is a detailed test project description for Project 1. It showcases the use of React and Bootstrap in building a responsive portfolio website. The project includes features like dynamic content loading, responsive design, and modern UI components.",
         "image": {
-          "webp": "./assets/img/webp/Personal-Resume-Website.webp",
-          "jpg": "./assets/img/jpg/Personal-Resume-Website.jpg"
+          "webp": "./assets/img/png/Personal-Resume-Website.png",
+          "jpg": "./assets/img/png/Personal-Resume-Website.png"
         },
         "technologies": [
           {
