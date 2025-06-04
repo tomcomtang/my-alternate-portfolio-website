@@ -1,0 +1,162 @@
+{
+  "site": {
+    "title": "Test Portfolio",
+    "description": "A test portfolio website template for demonstration purposes.",
+    "keywords": "test, portfolio, demo, website"
+  },
+  "header": {
+    "name": "Test User",
+    "title": "Test Developer",
+    "links": [
+      {
+        "text": "About",
+        "href": "#about"
+      },
+      {
+        "text": "Skills",
+        "href": "#skills"
+      },
+      {
+        "text": "Projects",
+        "href": "#projects"
+      }
+    ],
+    "social": [
+      {
+        "label": "LinkedIn",
+        "url": "https://linkedin.com/in/testuser",
+        "icon": "fa-linkedin"
+      },
+      {
+        "label": "GitHub",
+        "url": "https://github.com/testuser",
+        "icon": "fa-github"
+      }
+    ]
+  },
+  "about": {
+    "title": "My Story",
+    "content": "This is a test about section. It describes the test user's background and interests."
+  },
+  "skills": {
+    "languages": {
+      "title": "Languages",
+      "icons": [
+        "devicon-python-plain",
+        "devicon-java-plain-wordmark",
+        "devicon-cplusplus-plain",
+        "devicon-javascript-plain"
+      ],
+      "description": "Test description for languages section."
+    },
+    "frontend": {
+      "title": "Front-End",
+      "icons": [
+        "devicon-react-original",
+        "devicon-bootstrap-plain-wordmark",
+        "devicon-html5-plain-wordmark",
+        "devicon-css3-plain-wordmark"
+      ],
+      "description": "Test description for front-end section."
+    },
+    "backend": {
+      "title": "Back-End",
+      "icons": [
+        "devicon-nodejs-plain",
+        "devicon-express-original-wordmark",
+        "devicon-mongodb-plain-wordmark",
+        "devicon-postgresql-plain-wordmark"
+      ],
+      "description": "Test description for back-end section."
+    },
+    "tools": {
+      "title": "Tools",
+      "icons": [
+        "devicon-git-plain-wordmark",
+        "devicon-visualstudio-plain",
+        "devicon-github-plain-wordmark",
+        "devicon-docker-plain-wordmark"
+      ],
+      "description": "Test description for tools section."
+    }
+  },
+  "projects": {
+    "title": "Test Projects",
+    "items": [
+      {
+        "title": "Test Project 1",
+        "description": "This is a detailed test project description for Project 1. It showcases the use of React and Bootstrap in building a responsive portfolio website. The project includes features like dynamic content loading, responsive design, and modern UI components.",
+        "image": {
+          "webp": "./assets/img/webp/Personal-Resume-Website.webp",
+          "jpg": "./assets/img/jpg/Personal-Resume-Website.jpg"
+        },
+        "technologies": [
+          {
+            "icon": "https://unpkg.com/simple-icons@3.4.0/icons/react.svg",
+            "style": "filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
+          },
+          {
+            "icon": "https://unpkg.com/simple-icons@3.4.0/icons/bootstrap.svg",
+            "style": "filter: invert(24%) sepia(14%) saturate(2270%) hue-rotate(222deg) brightness(102%) contrast(90%)"
+          },
+          {
+            "icon": "https://unpkg.com/simple-icons@3.4.0/icons/github.svg"
+          }
+        ],
+        "link": "#"
+      },
+      {
+        "title": "Test Project 2",
+        "description": "This is a detailed test project description for Project 2. It demonstrates the development of a multiplayer online game using React and CSS Grid Layouts. The project features interactive gameplay, responsive design, and real-time data synchronization.",
+        "image": {
+          "webp": "./assets/img/webp/Perpetual-Crusades.webp",
+          "jpg": "./assets/img/jpg/Perpetual-Crusades.jpg"
+        },
+        "technologies": [
+          {
+            "icon": "https://unpkg.com/simple-icons@3.4.0/icons/react.svg",
+            "style": "filter: invert(73%) sepia(74%) saturate(1552%) hue-rotate(169deg) brightness(109%) contrast(97%)"
+          },
+          {
+            "icon": "https://unpkg.com/simple-icons@3.4.0/icons/css3.svg",
+            "style": "filter: invert(33%) sepia(29%) saturate(3844%) hue-rotate(184deg) brightness(90%) contrast(84%)"
+          },
+          {
+            "icon": "https://unpkg.com/simple-icons@3.4.0/icons/github.svg"
+          }
+        ],
+        "link": "#"
+      },
+      {
+        "title": "Test Project 3",
+        "description": "This is a detailed test project description for Project 3. It involves a web application for visualizing and analyzing data trends, built with JavaScript and modern web technologies. The project includes features like interactive charts, data filtering, and real-time updates.",
+        "image": {
+          "webp": "./assets/img/webp/COVID19-Tracker-App.webp",
+          "jpg": "./assets/img/jpg/COVID19-Tracker-App.jpg"
+        },
+        "technologies": [
+          {
+            "icon": "https://unpkg.com/simple-icons@3.4.0/icons/javascript.svg",
+            "style": "filter: invert(96%) sepia(47%) saturate(4151%) hue-rotate(338deg) brightness(100%) contrast(95%)"
+          }
+        ],
+        "link": "#"
+      },
+      {
+        "title": "Test Project 4",
+        "description": "This is a detailed test project description for Project 4. It showcases a comprehensive system management application developed with C++, featuring efficient data processing, user-friendly interface, and robust error handling.",
+        "image": {
+          "webp": "./assets/img/webp/Valuto-Account-Management.webp",
+          "jpg": "./assets/img/jpg/Valuto-Account-Management.jpg"
+        },
+        "technologies": [
+          {
+            "icon": "https://unpkg.com/simple-icons@3.4.0/icons/cplusplus.svg",
+            "style": "filter: invert(22%) sepia(77%) saturate(1486%) hue-rotate(183deg) brightness(101%) contrast(103%)"
+          }
+        ],
+        "link": "#"
+      }
+    ]
+  }
+} 
