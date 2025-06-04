@@ -68,7 +68,7 @@ const skillsHtml = Object.entries(content.skills).map(([key, skill]) => `
 // 精确替换 about section，只保留 user-details 和新 user 块
 html = html.replace(
   /(<section id="about">[\s\S]*?<div class="user-details">[\s\S]*?<\/div>)([\s\S]*?)(<\/section>)/,
-  (_, head, _old, tail) => `${head}\n<div class="user">\n${skillsHtml}\n      </div>\n${tail}`
+  (_, head, _old, tail) => `${head}\n<div class="user" id="skills">\n${skillsHtml}\n      </div>\n${tail}`
 );
 
 // 替换项目部分
