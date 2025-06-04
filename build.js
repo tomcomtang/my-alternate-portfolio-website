@@ -33,6 +33,28 @@ const socialLinks = content.header.social.map(social =>
 html = html.replace(/<div class="header-icons">[\s\S]*?<\/div>/, 
   `<div class="header-icons">\n${socialLinks}\n</div>`);
 
+// 替换about部分的标题、图片和内容
+html = html.replace(/<h1>My Story<\/h1>/, `<h1>${content.about.title}</h1>`);
+html = html.replace(
+  /<picture>[\s\S]*?<\/picture>/,
+  `<picture>
+          <source
+            type="image/png"
+            srcset="${content.about.image.src}"
+            alt="${content.about.image.alt}"
+            width="20%"
+            style="border-radius: 50%"
+          />
+          <img
+            src="${content.about.image.src}"
+            alt="${content.about.image.alt}"
+            width="20%"
+            style="border-radius: 50%"
+          />
+        </picture>`
+);
+html = html.replace(/<p>[\s\S]*?<\/p>/, `<p>${content.about.content}</p>`);
+
 // 生成技能 HTML
 const skillsHtml = Object.entries(content.skills).map(([key, skill]) => `
         <!-- Technology Stack #${key === 'languages' ? '1' : key === 'frontend' ? '2' : key === 'backend' ? '3' : '4'}: ${skill.title} -->
@@ -50,15 +72,17 @@ html = html.replace(
 );
 
 // 替换项目部分
-const projectsHtml = content.projects.items.map(project => `
-  <div class="user-projects">
-    <div class="images-right">
+const projectsHtml = content.projects.items.map((project, index) => {
+  const isEven = index % 2 === 0;
+  const imageDiv = `
+    <div class="images-${isEven ? 'right' : 'left'}">
       <picture>
         <source type="image/webp" srcset="${project.image.webp}" alt="${project.title}" />
         <img alt="${project.title}" src="${project.image.jpg}" />
       </picture>
-    </div>
-    <div class="contents" style="text-align: center">
+    </div>`;
+  const contentDiv = `
+    <div class="contents${isEven ? '' : '-right'}" style="text-align: center">
       <h3>${project.title}</h3>
       <div>
         ${project.technologies.map(tech => 
@@ -67,9 +91,14 @@ const projectsHtml = content.projects.items.map(project => `
       </div>
       <p style="text-align: justify">${project.description}</p>
       <a class="project-link" target="_blank" href="${project.link}">Check it out!</a>
-    </div>
-  </div>
-`).join('\n');
+    </div>`;
+  
+  return `
+  <div class="user-projects">
+    ${isEven ? imageDiv + contentDiv : contentDiv + imageDiv}
+  </div>`;
+}).join('\n');
+
 html = html.replace(/<section id="projects">[\s\S]*?<\/section>/, 
   `<section id="projects">\n<div class="user-details">\n<h1>${content.projects.title}</h1>\n</div>\n${projectsHtml}\n</section>`);
 

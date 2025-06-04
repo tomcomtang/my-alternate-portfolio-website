@@ -35,8 +35,12 @@
     ]
   },
   "about": {
-    "title": "My Story",
-    "content": "This is a test about section. It describes the test user's background and interests."
+    "title": "About Me",
+    "content": "I am a passionate software developer with a strong foundation in both front-end and back-end technologies. With 3 years of experience in web development, I specialize in creating responsive and user-friendly applications. My expertise includes React, Node.js, and modern JavaScript frameworks. I enjoy solving complex problems and am always eager to learn new technologies. Currently, I'm focusing on cloud architecture and microservices development. I believe in writing clean, maintainable code and following best practices in software development.",
+    "image": {
+      "src": "./assets/img/png/Professional-Picture-Me.png",
+      "alt": "Professional Me"
+    }
   },
   "skills": {
     "languages": {
